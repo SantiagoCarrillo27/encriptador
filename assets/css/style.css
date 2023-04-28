@@ -308,18 +308,18 @@ body {
         right: .8rem;
     }
 
-    @media screen and ( min-width: 400px ) {
+    @media screen and ( min-width: 375px ) {
 
         .span__paragrah {
             position: relative;
             font-size: .5em;
-            top:1.7rem;
-            right: .3rem;
+            top:1.9rem;
+            right: .8rem;
         }
         .span__paragrah::before {
             content: "! ";
-            width: 15px;
-            height: 15px;
+            width: 10px;
+            height: 10px;
             background-color: rgb(104, 102, 102);
             text-align: center;
             position: relative;
@@ -327,9 +327,21 @@ body {
             font-weight: bolder;
             color: #fff;
             border-radius: 50%;
-            right: 2em;
+            right: 1.5em;
             top: 2.2em;
         }
+
+        .botones {
+            padding: 1em 3em;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            font-family: inherit;
+            font-weight: 700;
+            border-radius: .6em;
+        }
+
+
 
 
         
