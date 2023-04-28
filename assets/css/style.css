@@ -246,7 +246,6 @@ body {
 
     .container__text {
         width: 100%;
-        outline: 1px solid red;
         height: 350px;
         position: relative;
         top: 2rem;
@@ -289,7 +288,6 @@ body {
 
     .container__text {
         width: 100%;
-        outline: 1px solid red;
         height: 250px;
         position: relative;
     }
@@ -308,5 +306,32 @@ body {
         font-size: .5em;
         top: 1.7rem;
         right: .8rem;
+    }
+
+    @media screen and ( min-width: 400px ) {
+
+        .span__paragrah {
+            position: relative;
+            font-size: .5em;
+            top:1.7rem;
+            right: .3rem;
+        }
+        .span__paragrah::before {
+            content: "! ";
+            width: 15px;
+            height: 15px;
+            background-color: rgb(104, 102, 102);
+            text-align: center;
+            position: relative;
+            display: block;
+            font-weight: bolder;
+            color: #fff;
+            border-radius: 50%;
+            right: 2em;
+            top: 2.2em;
+        }
+
+
+        
     }
 }
