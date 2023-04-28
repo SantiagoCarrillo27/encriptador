@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/Favicon.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Encriptador de texto / Sc.</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <picture class="logo">
+            <img class="logo__img" src="assets/img/Logo.png" alt="Logo de alura">
+        </picture>
+    </header>
+
+    <section class="section__container">
+        <div class="container__text">
+
+            <div class="container__input">
+                <input id="inputText" class="input__text" type="text" placeholder="Ingresa un texto" autofocus>
+                <span class="span__paragrah"> Solo letras minúsculas y sin acentos</span>
+            </div>
+            
+            <div class="boton__text">
+                <button id="Encriptar" type="button" class="btn__encriptar botones"
+                    onclick="encriptar()">Encriptar</button>
+                <button id="desencriptar" type="button" class="btn__desencriptar botones"
+                    onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="container__respuesta">
+
+            <picture id="img" class="picture__img ">
+
+                <img class="imagen__img" src="assets/img/Muñeco.png" alt="imagen con respuesta">
+
+            </picture>
+
+            <div id="textos" class="text__mensaje ">
+                <h3 class="title__mensaje">Ningún mensaje fue encontrado</h3>
+
+                <p class="mensaje__paragraph">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+
+            <div class="mensaje__respuesta ">
+                <h2 class="respuesta__title ocultar"> Texto Encriptado : </h2>
+                <p class="paragraph__respuesta"></p>
+            </div>
+
+
+            <div class="btn__copiar ">
+                <button class="btn__copy botones ocultar">Copiar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <span class="footer__text">&copy;Santiago Carrillo</span>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
